@@ -1,0 +1,426 @@
+/*J'Importe toutes les Fonts  */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+/* Je supprime toute les marges/décorations/puces par défaut */
+.header {
+    background-color: #0099ff;
+    width: 100vw;
+    height: 25vw;
+    position: relative;
+    /* overflow: hidden; */
+}
+#svg1{
+  position: absolute;
+  bottom: -1px; /* Ajustement pour masquer la barre de 1 pixel */
+  width: 100vw;
+  left: 0;
+  right: 0;
+}
+.footer{
+  background-color: #0099ff;
+  width: 100vw;
+  height: 25vw;
+  position: relative;
+}
+#svg2{
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  right: 0;
+  top: -1px; /* Ajustement pour masquer la barre de 1 pixel */
+}
+.main{
+    height: 500vh;
+    display: none;
+}
+.linkedin{
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+  display: none;
+}
+.linkedin:hover{
+  background-color: white;
+  border-radius: 15%;
+}
+.navbar{
+  font-size: 30px;
+  position: absolute;
+  left: 20vw;
+  display: none;
+  left: 10%;
+  /* border: solid 1px red; */
+}
+.navbar ul{
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+.navbar li{
+  padding: 15px;
+}
+.navbar a{
+  color: white;
+}
+.navbar a:hover {
+  color: black;
+  background-color: white;
+  border-radius: 15px;
+}
+.fleche{
+  position: fixed;
+  top: 80%;
+  z-index: 1000;
+  display: none;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.fleche:hover{
+  background: linear-gradient(to right,  #0099ff,#8e4ed2);
+  
+}
+#Titre{
+  font-size: 126px;
+  position: absolute;
+  top: 50%; /* Positionne le texte au milieu verticalement */
+  left: 50%; /* Positionne le texte au milieu horizontalement */
+  transform: translate(-50%, -50%); /* Centre le texte en partant du milieu */
+  text-align: center; /* Centre le texte à l'intérieur de l'élément */
+  background: linear-gradient(to right, #004ff9, #000000);/*Je creer un BG avec un degrader*/
+  background-clip: text; /* Standard property for compatibility */
+  -webkit-background-clip: text; /*Je fait en sorte que le degrader soit uniquement sur le texte*/
+  color: transparent;/*Je rend la couleur du texte transparent donc il affiche que le dégradé*/
+  /* border: solid 1px red; */
+}
+#Titre:hover{
+  background: linear-gradient(to right,  #2334cc,#d12bb5);/*Je creer un BG avec un degrader*/
+  background-clip: text; /* Standard property for compatibility */
+  -webkit-background-clip: text; /*Je fait en sorte que le degrader soit uniquement sur le texte*/
+  color: transparent;/*Je rend la couleur du texte transparent donc il affiche que le dégradé*/
+  cursor: pointer;
+}
+
+#Titre3{
+  font-size: 50px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  background: linear-gradient(to right, #117aca, #0c0014);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  /* border: solid 1px red; */
+}
+#openMain{
+  font-size: 90px;
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+
+  background: linear-gradient(to right, #117aca, #0c0014);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: block;
+  /* border: solid 1px red; */
+}
+#openMain:hover{
+  cursor: pointer;
+  background: linear-gradient(to right, #d12bb5, #2334cc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.blanc{
+  background-color: white;
+  width: 100vw;
+  height: 15vh;
+  color: transparent;
+  
+}
+#txtPresentation{
+  font-size: 32px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 40vw;
+  /* border: solid 1px red; */
+}
+#madeByMatheo{
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+  color: white;
+}
+#projets{
+  font-size: 3vw;
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: linear-gradient(to right, #0c0014, #117aca);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  /* border: solid 1px red; */
+  width: 90vw;
+}
+.imgProjet1{
+  width: 30vw; 
+  border-radius: 50px;
+  height: 35vh;
+ object-fit: cover;/* cette ligne sert a rogner l'image a la place de la re dimentioner */
+}
+.imgProjet1:hover{
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+}
+
+.image-container #overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7); /* Filtre blanc semi-transparent */
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover #overlay {
+  opacity: 1;
+}
+#overlay a{
+  color: inherit;
+  font-size: 3vw;
+}
+.imgProjet2{
+  width: 30vw; 
+  border-radius: 50px;
+  height: 35vh;
+  object-fit: cover;
+}
+.imgProjet2:hover{
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+.image-container2 {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container2 img {
+  display: block;
+}
+
+.image-container2 #overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7); /* Filtre blanc semi-transparent */
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container2:hover #overlay2 {
+  opacity: 1;
+}
+#overlay2 a{
+  color: inherit;
+  font-size: 3vw;
+}
+
+.imgProjet3{
+  width: 30vw; 
+  border-radius: 50px;
+  height: 35vh;
+  object-fit: cover;
+}
+.imgProjet3:hover{
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+.image-container3 {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container3 img {
+  display: block;
+}
+
+.image-container3 #overlay3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7); /* Filtre blanc semi-transparent */
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container3:hover #overlay3 {
+  opacity: 1;
+}
+#overlay3 a{
+  color: inherit;
+  font-size: 3vw;
+}
+.cv{
+  width: 50px;
+  z-index: 1000;
+  position: absolute;
+  bottom: 50px;
+  left: 180px;
+  display: none;
+}
+.cv:hover{
+  background-color: white;
+  border-radius: 15%;
+}
+#competences{
+  font-size: 3vw;
+  position: absolute;
+  top: 220%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: linear-gradient(to right, #0c0014, #117aca);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  /* border: solid 1px red; */
+  width: 90vw;
+  z-index: 2;
+}
+.tableau{
+  top: 280%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+#img_tableau{
+  width: 70vw;
+  z-index: -1;
+}
+#download{
+  position: absolute;
+  width: 3vw;
+}
+#download:hover{
+  background-color: #0099ff;
+  border-radius: 15px;
+  padding: 2px;
+}
+#titre_veille_technologique{
+  font-size: 3vw;
+  position: absolute;
+  top: 390%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: linear-gradient(to right, #117aca, #0c0014);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-top: 16px;
+}
+#paragraphe1{
+  font-size: 28px;
+  margin: 16px;
+  width: 90vw;
+  color: #000;
+}
+#paragraphe2{
+  font-size: 28px;
+  margin: 16px;
+  width: 90vw;
+  color: #000;
+}
+#TouchePasAMaVF{
+  background: linear-gradient(to right, #117aca, #0c0014);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.articles{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr); /* 3x2 disposition par défaut */
+  position: relative;
+  justify-content: center;
+  top: 80%;
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+}
+
+.articles img{
+  width: 25vw;
+  border-radius: 15px;
+  align-items: center;
+  
+}
+.articles img:hover{
+  opacity: 0.3;
+  transition: 0.3s;
+}
+
+.articles p{
+  color: #000;
+  text-align: center;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.article-container img {
+  display: block;
+  margin: 0 auto;
+}

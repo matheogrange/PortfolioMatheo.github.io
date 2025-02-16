@@ -1,0 +1,454 @@
+  /* Mobile S (320px par 480px)*/
+  @media screen and (max-width: 320px){
+    .header{
+      height: 25vh;
+    }
+
+    #openMain{
+      font-size: 46px;
+      margin-top: 60px;
+    }
+    #madeByMatheo.poppins-thin{
+      font-size: 20px;
+    }
+    .navbar{
+      font-size: 16px;
+      left: 3px;
+    }
+    .navbar li{
+      padding: 2px;
+    }
+    #Titre{
+      font-size: 50px;
+      top: 60%;
+    }
+    #Titre3{
+      font-size: 30px;
+      top: 80%;
+    }
+    #txtPresentation p{
+      font-size: 16px;
+      width: 90vw;
+      top: 30%;
+    }
+    .fleche{
+      width: 75px;
+    }
+    .main{
+      height: 425vh;
+    }
+    .footer{
+      bottom: 0;
+    }
+    .projetsRealiser{
+      position: absolute;
+      top: 0;
+    }
+    #projets{
+      font-size: 6vw;
+    }
+    #img_tableau{
+      margin-top: -300px;
+    }
+    #titre_veille_technologique{
+      position: relative;
+      margin-top: -300px;
+      z-index: 1000000;
+    }
+    #paragraphe1{
+      font-size: 11px;
+      text-align: center;
+    }
+    #paragraphe2{
+      font-size: 11px;
+      text-align: center;
+    }
+    .articles{
+      margin-top: 600px;
+      /* top: 60%; */
+      left: 25%;
+      grid-template-columns: repeat(2, 1fr); /* Passe à 2x3 lorsque l'écran est plus petit */
+    }
+    .articles img{
+      width: 50vw;
+      padding: 15px;
+    }
+  }
+     /* Mobile M (375px par 667px)*/ 
+  @media screen and (max-width: 376px){
+    #openMain{
+      margin-top: 110px;
+    }
+    #projets{
+      margin-top: 70%;
+    }
+    #competences{
+      top: 200%;
+    }
+    #img_tableau img{
+      margin-top: -250px;
+    }
+    #titre_veille_technologique{
+      margin-top: -250px;
+    }
+    #paragraphe1{
+      font-size: 11px;
+      text-align: center;
+    }
+    #paragraphe2{
+      font-size: 11px;
+      text-align: center;
+    }
+    .articles{
+      margin-top: 350px;
+      left: 0;
+      grid-template-columns: repeat(2, 1fr); /* Passe à 2x3 lorsque l'écran est plus petit */
+    }
+    .articles img{
+      width: 35vw;
+      padding: 15px;
+    }
+  }
+   /* 4K (2560px par 1440px) */
+  @media screen and (max-width: 2560px){
+    #openMain{
+      font-size: 100px;
+    }
+    .header{
+      height: 50vh;
+    }
+    .footer{
+      height: 50vh;
+    }
+    .navbar{
+      left: 100px;
+    }
+  }
+
+  /* Ordinateur portable L (1440px par 1080px) */
+  @media screen and (max-width: 1440px){
+    #openMain{
+      font-size: 90px;
+    }
+    #madeByMatheo{
+      font-size: 24px;
+    }
+    .navbar{
+      left: 100px;
+    }
+    #competences{
+      top: 200%;
+    }
+    .tableau{
+      top: 250%;
+    }
+    #titre_veille_technologique{
+      position: relative;
+      /* margin-top: -300px; */
+      top: 2500px;
+      z-index: 1000000;
+    }
+    #paragraphe1{
+      font-size: 26px;
+      text-align: center;
+    }
+    #paragraphe2{
+      font-size: 26px;
+      text-align: center;
+    }
+    .articles{
+      top: 55%;
+      left: 0;
+    }
+    .articles img{
+      width: 25vw;
+      padding: 15px;
+    }
+  }
+  @media screen and (max-width: 1340px){
+    .navbar{
+      left: 0;
+    }
+  }
+  @media screen and (max-width: 1111px) {
+    .header{
+      width: 100vw;
+      height: 50vh;
+    }
+    .navbar{
+      right: 1;
+      font-size: 24px;
+    }
+    #txtPresentation{
+      margin-top: 13vh;
+    }
+    #projets{
+      top: 170%;
+    }
+    #competences{
+      top: 220%;
+    }
+    .tableau{
+      top: 250%;
+    }
+  }
+
+   /* Ordinateur portable (1024px par 768px) */
+  @media screen and (max-width: 1024px){
+    #openMain{
+      font-size: 64px;
+      margin-top: 100px;
+    }
+    .footer{
+      height: 30vh;
+    }
+    .blanc{
+      height: 40vh;
+    }
+    .header{
+      height: 50vh;
+    }
+    .navbar{
+      left: 0;
+    }
+    #txtPresentation{
+      margin-top: 13vh;
+    }
+    #titre_veille_technologique{
+      position: relative;
+      /* margin-top: -300px; */
+      top: 2200px;
+      z-index: 1000000;
+    }
+    #paragraphe1{
+      font-size: 16px;
+      text-align: center;
+    }
+    #paragraphe2{
+      font-size: 16px;
+      text-align: center;
+    }
+    .articles{
+      top: 50%;
+      left: 0;
+      grid-template-columns: repeat(2, 1fr); /* Passe à 2x3 lorsque l'écran est plus petit */
+    }
+    .articles img{
+      width: 35vw;
+      padding: 15px;
+    }
+  }
+  @media screen and (max-width: 969px) {
+    .header {
+        width: 100vw;
+        height: 60vh;
+    }
+    .navbar {
+        font-size: 24px;
+    }
+    .navbar ul {
+        display: block;
+    }
+    .navbar li {
+        display: block;
+        padding: 10px 0;
+    }
+    #projets{
+      top: 180%;
+    }
+    #competences{
+      top: 230%;
+    }
+    .tableau{
+      top: 260%;
+    }
+    #Titre{
+      margin-top: 15%;
+    }
+    #Titre3{
+      margin-top: 15%;
+    }
+    #txtPresentation{
+      width: 90vw;
+      top: 100%;
+    }
+    #titre_veille_technologique{
+      position: relative;
+      /* margin-top: -300px; */
+      top: 2200px;
+      z-index: 1000000;
+    }
+    #paragraphe1{
+      font-size: 16px;
+      text-align: center;
+    }
+    #paragraphe2{
+      font-size: 16px;
+      text-align: center;
+    }
+}
+  @media screen and (max-width: 798px){
+    #txtPresentation{
+      margin-top: 17vh;
+    }
+    #projets{
+      top: 180%;
+    }
+    #overlay{
+      font-size: 32px;
+    }
+    #overlay2{
+      font-size: 32px;
+    }
+    #overlay3{
+      font-size: 32px;
+    }
+    #competences{
+      top: 230%;
+    }
+  }
+
+
+   /* Tablettes (768px par 1024px) */
+  @media screen and (max-width: 768px){
+    #openMain{
+      font-size: 64px;
+    }
+    .blanc{
+      height: 50vh;
+    }
+    #projets{
+      top: 190%;
+    }
+    #titre_veille_technologique{
+      position: relative;
+      /* margin-top: -300px; */
+      top: 2100px;
+      z-index: 1000000;
+    }
+    #paragraphe1{
+      font-size: 16px;
+      text-align: center;
+    }
+    #paragraphe2{
+      font-size: 16px;
+      text-align: center;
+    }
+    .articles{
+      top: 45%;
+      left: 0;
+      grid-template-columns: repeat(2, 1fr); /* Passe à 2x3 lorsque l'écran est plus petit */
+    }
+    .articles img{
+      width: 35vw;
+      padding: 15px;
+    }
+
+  }  
+  @media screen and (max-width: 749px){
+    #txtPresentation{
+      margin-top: 20vh;
+    }
+  }
+  @media screen and (max-width: 707px){
+    #txtPresentation{
+      margin-top: 25vh;
+    }
+    #Titre{
+      font-size: 100px;
+    }
+    #projets{
+      top: 200%;
+    }
+    #competences{
+      top: 240%;
+    }
+  }
+  @media screen and (max-width: 556px){
+    #txtPresentation{
+      top: 80%;
+      font-size: 24px;
+      width: 90vw;
+    }
+    #projets{
+      top: 140%;
+    }
+    #competences{
+      top: 190%;
+    }
+    .tableau{
+      top: 210%;
+    }
+    #Titre{
+      font-size: 75px;
+      margin-top: 25%;
+    }
+    #Titre3{
+      margin-top: 25%;
+      font-size: 56px;
+      width: 90vw;
+    }
+    .projetsRealiser{
+      margin-top: 45%;
+    }
+    #competences{
+      margin-top: 45%;
+    }
+    .tableau{
+      margin-top: 45%;
+    }
+    #titre_veille_technologique{
+      position: relative;
+      /* margin-top: -300px; */
+      top: 2100px;
+      z-index: 1000000;
+    }
+    #paragraphe1{
+      font-size: 16px;
+      text-align: center;
+    }
+    #paragraphe2{
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+   /* Mobile L (425px par 667px) */
+  @media screen and (max-width: 425px){
+    #txtPresentation{
+      margin-top: 30vh;
+      font-size: 24px;
+      width: 90vw;
+    }
+    #Titre{
+      font-size: 75px;
+    }
+    #titre_veille_technologique{
+      position: relative;
+      top: 1800px;
+      z-index: 1000000;
+    }
+    /* #titre_veille_technologique{
+      position: relative;
+      margin-top: -300px;
+      z-index: 1000000;
+    } */
+    #paragraphe1{
+      font-size: 11px;
+      text-align: center;
+    }
+    #paragraphe2{
+      font-size: 11px;
+      text-align: center;
+    }
+    .articles{
+      top: 40%;
+      left: 0;
+      grid-template-columns: repeat(2, 1fr); /* Passe à 2x3 lorsque l'écran est plus petit */
+    }
+    .articles img{
+      width: 35vw;
+      padding: 15px;
+    }
+  }
+
+
