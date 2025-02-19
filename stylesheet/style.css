@@ -424,3 +424,30 @@
   display: block;
   margin: 0 auto;
 }
+.photoProfil{
+  width: 20vw;
+  height: 20vw;
+  z-index: 1;
+  top: 70%;
+  left: 5%;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  object-position: top;
+  background-color: #004ff9;
+}
+.photoProfil:hover{
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.line{
+  width: 15px;
+  height: 500px;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  border-radius: 15px;
+}
+

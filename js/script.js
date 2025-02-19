@@ -5,7 +5,8 @@ function toggleMain() {
     var fleche = document.querySelector('.fleche');
     var navbar = document.querySelector('.navbar');
     var linkedin = document.querySelector('.linkedin');
-    var cv = document.querySelector('.cv')
+    var cv = document.querySelector('.cv');
+    var pfp = document.querySelector('.photoProfil');
 
     if (main.style.display === 'none' || main.style.display === '') {
         main.style.display = 'block';
@@ -15,6 +16,7 @@ function toggleMain() {
         navbar.style.display ='block';
         linkedin.style.display = 'block';
         cv.style.display = 'block';
+        pfp.style.display = 'none';
     } else {
         main.style.display = 'none';
         closetxt.style.display = 'block';
@@ -23,5 +25,6 @@ function toggleMain() {
         navbar.style.display = 'none';
         linkedin.style.display = 'none';
         cv.style.display = 'none';
+        pfp.style.display = 'block';
     }
 }
