@@ -35,7 +35,7 @@
   top: -1px; /* Ajustement pour masquer la barre de 1 pixel */
 }
 .main{
-    height: 600vh;
+    height: 800vh;
     display: none;
 }
 .linkedin{
@@ -389,7 +389,7 @@
   grid-template-columns: repeat(3, 1fr); /* 3x2 disposition par défaut */
   position: relative;
   justify-content: center;
-  top: 65%;
+  top: 47%;
 }
 
 .responsive-image {
@@ -496,4 +496,28 @@
 .logoJC:hover{
   scale: 1.1;
   box-shadow: #000 5px 5px 10px;
+  border-radius: 15px;
+}
+#texteStage1{
+  font-size: 16px;
+  position: absolute;
+  top: 670%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80vw;
+}
+#missions{
+  font-weight: bold;
+}
+#pros{
+  font-weight: bold;
+}
+#conclusion{
+  font-weight: bold;
+}
+
+#texteStage1:hover{
+  box-shadow: #000 5px 5px 10px;
+  border-radius: 15px;
 }
