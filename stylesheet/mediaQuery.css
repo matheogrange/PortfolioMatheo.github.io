@@ -29,7 +29,7 @@
     #txtPresentation p{
       font-size: 16px;
       width: 90vw;
-      top: 30%;
+      top: 60%;
     }
     .fleche{
       width: 75px;
@@ -422,10 +422,10 @@
       margin-top: 45%;
     }
     #competences{
-      margin-top: 45%;
+      margin-top: 60%;
     }
     .tableau{
-      margin-top: 45%;
+      margin-top: 65%;
     }
     #titre_veille_technologique{
       position: relative;
@@ -445,7 +445,7 @@
    /* Mobile L (425px par 667px) */
   @media screen and (max-width: 425px){
     #txtPresentation{
-      margin-top: 30vh;
+      margin-top: 40vh;
       font-size: 24px;
       width: 90vw;
     }
@@ -471,7 +471,7 @@
       text-align: center;
     }
     .articles{
-      top: 40%;
+      top: 45%;
       left: 0;
       grid-template-columns: repeat(2, 1fr); /* Passe à 2x3 lorsque l'écran est plus petit */
     }

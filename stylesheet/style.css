@@ -35,7 +35,7 @@
   top: -1px; /* Ajustement pour masquer la barre de 1 pixel */
 }
 .main{
-    height: 800vh;
+    height: 920vh;
     display: none;
 }
 .linkedin{
@@ -49,9 +49,9 @@
   border-radius: 15%;
 }
 .navbar{
-  font-size: 30px;
+  font-size: 25px;
   position: absolute;
-  left: 20vw;
+  left: 0;
   display: none;
   left: 10%;
   /* border: solid 1px red; */
@@ -82,7 +82,7 @@
 }
 .fleche:hover{
   background: linear-gradient(to right,  #0099ff,#8e4ed2);
-  
+  box-shadow: #000 5px 5px 10px;
 }
 #Titre{
   font-size: 126px;
@@ -389,7 +389,7 @@
   grid-template-columns: repeat(3, 1fr); /* 3x2 disposition par défaut */
   position: relative;
   justify-content: center;
-  top: 47%;
+  top: 42%;
 }
 
 .responsive-image {
@@ -404,8 +404,9 @@
   
 }
 .articles img:hover{
-  opacity: 0.3;
+  /* opacity: 0.3; */
   transition: 0.3s;
+  box-shadow: #000 5px 5px 10px;
 }
 
 .articles p{
@@ -518,6 +519,92 @@
 }
 
 #texteStage1:hover{
+  box-shadow: #000 5px 5px 10px;
+  border-radius: 15px;
+}
+#titreStage2{
+  font-size: 3vw;
+  position: absolute;
+  top: 750%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: linear-gradient(to right, #117aca, #0c0014);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.logoElionox{
+  position: absolute;
+  top: 775%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.logoElionox:hover{
+  scale: 1.1;
+  box-shadow: #000 5px 5px 10px;
+  border-radius: 15px;
+}
+
+#texteStage2{
+  font-size: 16px;
+  position: absolute;
+  top: 835%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 80vw;
+}
+#texteStage2:hover{
+  box-shadow: #000 5px 5px 10px;
+  border-radius: 15px;
+}
+#icons{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  bottom: 0;
+  color: white;
+}
+#titreProjet{
+  font-size: 3vw;
+  position: absolute;
+  top: 900%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: linear-gradient(to right, #117aca, #0c0014);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#texteProjetPro{
+  font-size: 24px;
+  position: absolute;
+  top: 935%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 55vw;
+}
+
+#texteProjetPro:hover{
+  box-shadow: #000 5px 5px 10px;
+  border-radius: 15px;
+}
+.images_langues{
+  position: absolute;
+  top: 980%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.images_langues img{
+  width: 5vw;
+}
+.images_langues img:hover{
+  /* scale: 1.1; */
   box-shadow: #000 5px 5px 10px;
   border-radius: 15px;
 }
